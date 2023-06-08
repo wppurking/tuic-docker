@@ -1,6 +1,10 @@
 {
   "server": "[::]:443",
-  "token": ["TOKEN0", "TOKEN1"],
+  "users": {
+    "00000000-0000-0000-0000-000000000000": "PASSWORD_0",
+    "00000000-0000-0000-0000-000000000001": "PASSWORD_1"
+  },
+
   "certificate": "/etc/tuic/CERT",
   "private_key": "/etc/tuic/PRIV_KEY",
 
@@ -10,6 +14,6 @@
   "authentication_timeout": 1000,
   "alpn": ["h3", "spdy/3.1"],
   "max_external_packet_size": 1500,
-  
+
   "log_level": "info"
 }
